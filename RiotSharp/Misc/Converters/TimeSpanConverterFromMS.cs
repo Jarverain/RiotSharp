@@ -16,14 +16,14 @@ namespace RiotSharp.Misc.Converters
             var token = JToken.Load(reader);
             if (token.Value<long?>() != null)
             {
-                return TimeSpan.FromMilliseconds(token.Value<long>());
+                return TimeSpan.FromSeconds(token.Value<long>());
             }
             return null;
         }
 
         public override void WriteJson(JsonWriter writer, object value, JsonSerializer serializer)
         {
-            serializer.Serialize(writer, (long)(((TimeSpan)value).TotalMilliseconds));
+            serializer.Serialize(writer, (long)(((TimeSpan)value).TotalSeconds));
         }
     }
 }

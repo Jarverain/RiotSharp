@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+using Newtonsoft.Json;
 
 namespace RiotSharp.Endpoints.MatchEndpoint
 {
@@ -172,6 +172,18 @@ namespace RiotSharp.Endpoints.MatchEndpoint
         public long MagicDamageDealt { get; set; }
 
         /// <summary>
+        /// Total Damage To Objectives
+        /// </summary>
+        [JsonProperty("damageDealtToObjectives")]
+        public long DamageDealtToObjectives { get; set; }
+
+        /// <summary>
+        /// Total Damage To Turrets
+        /// </summary>
+        [JsonProperty("damageDealtToTurrets")]
+        public long DamageDealtToTurrets { get; set; }
+
+        /// <summary>
         /// Magic damage dealt to champions.
         /// </summary>
         [JsonProperty("magicDamageDealtToChampions")]
@@ -182,6 +194,12 @@ namespace RiotSharp.Endpoints.MatchEndpoint
         /// </summary>
         [JsonProperty("magicDamageTaken")]
         public long MagicDamageTaken { get; set; }
+
+        /// <summary>
+        /// Damage Mitigated
+        /// </summary>
+        [JsonProperty("damageSelfMitigated")]
+        public long DamageSelfMitigated { get; set; }
 
         /// <summary>
         /// Minions kiled.
@@ -364,6 +382,12 @@ namespace RiotSharp.Endpoints.MatchEndpoint
         public long UnrealKills { get; set; }
 
         /// <summary>
+        /// Vision Score
+        /// </summary>
+        [JsonProperty("visionScore")]
+        public long VisionScore { get; set; }
+
+        /// <summary>
         /// Number of vision wards purchased.
         /// </summary>
         [JsonProperty("visionWardsBoughtInGame")]
@@ -386,5 +410,161 @@ namespace RiotSharp.Endpoints.MatchEndpoint
         /// </summary>
         [JsonProperty("winner")]
         public bool Winner { get; set; }
+
+        /// <summary>
+        /// Perk
+        /// </summary>
+        [JsonProperty("perk0")]
+        public int Perk0 { get; set; }
+
+        /// <summary>
+        /// Perk Var
+        /// </summary>
+        [JsonProperty("perk0Var1")]
+        public int Perk0Var1 { get; set; }
+
+        /// <summary>
+        /// Perk Var
+        /// </summary>
+        [JsonProperty("perk0Var2")]
+        public int Perk0Var2 { get; set; }
+
+        /// <summary>
+        /// Perk Var
+        /// </summary>
+        [JsonProperty("perk0Var3")]
+        public int Perk0Var3 { get; set; }
+
+        /// <summary>
+        /// Perk
+        /// </summary>
+        [JsonProperty("perk1")]
+        public int Perk1 { get; set; }
+
+        /// <summary>
+        /// Perk Var
+        /// </summary>
+        [JsonProperty("perk1Var1")]
+        public int Perk1Var1 { get; set; }
+
+        /// <summary>
+        /// Perk Var
+        /// </summary>
+        [JsonProperty("perk1Var2")]
+        public int Perk1Var2 { get; set; }
+
+        /// <summary>
+        /// Perk Var
+        /// </summary>
+        [JsonProperty("perk1Var3")]
+        public int Perk1Var3 { get; set; }
+
+        /// <summary>
+        /// Perk
+        /// </summary>
+        [JsonProperty("perk2")]
+        public int Perk2 { get; set; }
+
+        /// <summary>
+        /// Perk Var
+        /// </summary>
+        [JsonProperty("perk2Var1")]
+        public int Perk2Var1 { get; set; }
+
+        /// <summary>
+        /// Perk Var
+        /// </summary>
+        [JsonProperty("perk2Var2")]
+        public int Perk2Var2 { get; set; }
+
+        /// <summary>
+        /// Perk Var
+        /// </summary>
+        [JsonProperty("perk2Var3")]
+        public int Perk2Var3 { get; set; }
+
+        /// <summary>
+        /// Perk
+        /// </summary>
+        [JsonProperty("perk3")]
+        public int Perk3 { get; set; }
+
+        /// <summary>
+        /// Perk Var
+        /// </summary>
+        [JsonProperty("perk3Var1")]
+        public int Perk3Var1 { get; set; }
+
+        /// <summary>
+        /// Perk Var
+        /// </summary>
+        [JsonProperty("perk3Var2")]
+        public int Perk3Var2 { get; set; }
+
+        /// <summary>
+        /// Perk Var
+        /// </summary>
+        [JsonProperty("perk3Var3")]
+        public int Perk3Var3 { get; set; }
+
+        /// <summary>
+        /// Perk
+        /// </summary>
+        [JsonProperty("perk4")]
+        public int Perk4{ get; set; }
+
+        /// <summary>
+        /// Perk Var
+        /// </summary>
+        [JsonProperty("perk4Var1")]
+        public int Perk4Var1 { get; set; }
+
+        /// <summary>
+        /// Perk Var
+        /// </summary>
+        [JsonProperty("perk4Var2")]
+        public int Perk4Var2 { get; set; }
+
+        /// <summary>
+        /// Perk Var
+        /// </summary>
+        [JsonProperty("perk4Var3")]
+        public int Perk4Var3 { get; set; }
+
+        /// <summary>
+        /// Perk 
+        /// </summary>
+        [JsonProperty("perk5")]
+        public int Perk5 { get; set; }
+
+        /// <summary>
+        /// Perk Var
+        /// </summary>
+        [JsonProperty("perk5Var1")]
+        public int Perk5Var1 { get; set; }
+
+        /// <summary>
+        /// Perk Var
+        /// </summary>
+        [JsonProperty("perk5Var2")]
+        public int Perk5Var2 { get; set; }
+
+        /// <summary>
+        /// Perk Var
+        /// </summary>
+        [JsonProperty("perk5Var3")]
+        public int Perk5Var3 { get; set; }
+
+        /// <summary>
+        /// Perk Primary Style
+        /// </summary>
+        [JsonProperty("perkPrimaryStyle")]
+        public int PerkPrimaryStyle { get; set; }
+
+        /// <summary>
+        /// Perk Sub Style
+        /// </summary>
+        [JsonProperty("perkSubStyle")]
+        public int PerkSubStyle { get; set; }
     }
 }
